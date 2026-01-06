@@ -27,6 +27,7 @@
     request.animated = [self.animated boolValue];
     request.transitionStyle = [self.transitionStyle intValue];
     request.reLaunchMode = [self.reLaunchMode intValue];
+    request.forceUpdate = YES;
 
     // 启动小程序
     [[FATClient sharedClient] startAppletWithRequest:request InParentViewController:currentVC completion:^(BOOL result, NSError *error) {
