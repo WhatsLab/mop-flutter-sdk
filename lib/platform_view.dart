@@ -112,6 +112,11 @@ class _MopPlatformViewState extends State<MopPlatformView> {
         viewType: _unifiedRegistryViewType,
         creationParams: params,
         creationParamsCodec: codec,
+          gestureRecognizers: {
+    Factory<OneSequenceGestureRecognizer>(
+      () => EagerGestureRecognizer(),
+    ),
+  },
       );
     } else {
       // Android端暂时保持现有实现
