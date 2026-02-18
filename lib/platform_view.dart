@@ -62,7 +62,7 @@ class _MopPlatformViewState extends State<MopPlatformView> {
 
   @override
   void dispose() {
-    // _eventSubscription?.cancel();
+    _eventSubscription?.cancel();
     super.dispose();
   }
 
